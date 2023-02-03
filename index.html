@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Recipe</title>
+</head>
+<body>
+    <div class="recipe">
+        <div class="recipe__item">
+        <div class="recipe__title">
+          <h1 style="text-align: center;">Торт "Медовик"</h1>
+        </div>
+        <div class="recipe__img">
+          <img src="img/image.jpg" alt="photo" width="100%" height="100%" >
+        </div>
+        <div class="recipe__describe">
+          <h3>Інгредієнти:</h3>
+          <ul>
+              <li>Яйця 2 шт.</li>
+              <li>Цукор 3 ст. л</li>
+              <li>Мед (рідкий) 3 ст. л.</li>
+              <li>Сода харчова 1 дес. ложка</li>
+              <li>Борошно 1,5-2 склянки</li>
+              <li>Сметана жирністю 24% 600 г</li>
+              <li>Цукрова пудра 0,5 стакана</li>    
+          </ul>
+        </div>
+      </div>
+        <div class="recipe__item">
+          <div class="recipe__title-describe">
+            <h1>Як приготувати:</h1>
+          </div>
+          <div class="recipe__cook-describe">
+            <ul>
+              <li>Почнемо з приготування тіста. Змішуємо яйця, цукор, рідкий мед до однорідного стану. У просіяне борошно додаємо соду.</li>
+              <li>Рівномірно перемішуємо, і тісто готове. Виливаємо тісто в форму, покриту пергаментом, і випікаємо в розігрітій духовці при температурі 180 градусів 15-20 хвилин.</li>
+              <li>Поки печеться Медовик, готуємо сметанний крем: збиваємо сметану і цукрову пудру. Медовий корж для торта трохи остудити, і поки теплий, розрізати на 3 частини.</li>
+              <li>Промащуємо кремом коржі і боки медового торта. Торт Медовик зі сметанним кремом обсипаємо крихтою. Даємо просочитися хоча б 2-3 години!</li>
+            </ul>
+          </div>
+        </div>
+        <div class="recipe__item last" style="justify-content: center;align-items: center;font-size:40px;">
+          <h2>Смачного <span class="material-symbols-outlined" style="position: relative;top: 5px;font-size: 50px;">
+            restaurant_menu
+            </span></h2>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+  
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.recipe').slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+      });
+    </script>
+</body>
+</html>

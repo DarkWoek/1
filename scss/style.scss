@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+$fs:20px;
+$fs1:10px;
+$fw:400;
+$ff:Roboto;
+$fft: Open Sans;
+$fc:#000;
+$bc:#D3784B;
+$mc:#e7c48e;
+$tc:#a74040;
+$xc:#722020;
+body{
+    max-width: 100%;
+    height: 100%;
+    margin: 8% auto;
+    background-color: $mc;
+    font-family: $ff;
+    display: flex;
+    justify-content: center;
+    .recipe{
+        width: 500px;
+        height: 671px;
+        border-radius: 10px;
+        .recipe__item{
+            width: 50%;
+            height: 710px;
+            border-radius: 10px;
+            border: 3px solid $tc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 10px ;        
+            .recipe__title{
+                width: 50%;
+                height: 11%;
+                h1{
+                    color: $tc;
+                }
+            }
+            .recipe__img{
+                width: auto;
+                height: 50%;
+                display: flex;
+                justify-content: center;
+                border: 4px solid $bc;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .recipe__describe{
+                width: 50%;
+                height: 30%;
+                position: relative;
+                right: 20%;
+                top: -5%;
+                line-height: 110%;
+                color: $xc;  
+                font-family: $fft;
+                li{
+                    list-style-type: circle;
+                    font-weight: $fw+200;
+                }
+            }
+            .recipe__title-describe{
+                color: $tc;
+                position: relative;
+                top: 65px;
+            }
+            .recipe__cook-describe{
+                color: $tc;
+                font-family:$fft;
+                line-height: 200%;
+                position: relative;
+                bottom: 50px;
+                li{
+                    font-weight: $fw+200;
+                    list-style-type: circle;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+      .recipe{
+        width: 400px;
+        height: 802px;
+        border-radius: 10px;
+        .recipe__item{
+            height: 800px;
+        }
+        .recipe__img{
+            margin: 10px;
+        }
+      } 
+    }
+    @media screen and (max-width: 390px) {
+        .recipe{
+          width: 375px;
+          max-height: 100%;
+          border-radius: 10px;
+          .recipe__item{
+            height: 796px;
+          }
+          .recipe__img{
+            margin: 10px;
+          }
+          .last{
+            h2{
+                font-size: $fs+25px;
+            }
+            span{
+                font-size: $fs+20px;
+            }
+          }
+          .recipe__describe{
+            font-size: $fs1+5px;
+          }
+          .recipe__cook-describe{
+            font-size: $fs1+5px;
+          }
+        } 
+    }
+}
